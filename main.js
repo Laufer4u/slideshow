@@ -1,12 +1,11 @@
 
-function addImage2Body(folder, description, price) {
-    var x = document.createElement("img");
-    
-    var src = document.createTextNode(folder);
+function addImage2Body(name, description, price) {
+    var src = document.createTextNode(name);
     var description = document.createTextNode(' Description: ' + description);
     var price = document.createTextNode(' Price: ' + price + '€');
 
-    x.src = './img/'+folder+'.jpg';
+    var x = document.createElement("img");
+    x.src = './img/'+name+'.jpg';
     x.description = description;
     x.price = price; 
 
