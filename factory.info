@@ -1,0 +1,37 @@
+
+class Player {
+    constructor() {
+        this.id = null; // 'w' | 'b'
+        this.name = null; // 'white' | 'black'
+        this.malakia = null;
+    }
+}
+
+class PlayerFactory {
+    white() {
+        let a = new Player();
+        a.id = 'w';
+        a.name = 'White';
+        return a;
+    }
+    black() {
+        let a = new Player();
+        a.id = 'b';
+        a.name = 'Black';
+        return a;
+    }
+    malakas(i) {
+        let a = new Player();
+        a.id = 'm';
+        a.name = 'Mlk';
+        a.malakia = i;
+        return a;
+    }
+}
+
+let create = {
+    player: new PlayerFactory(),
+    node: new PlayerFactory(),
+};
+let w = create.player.white();
+let b = create.player.black();
