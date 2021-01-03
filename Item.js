@@ -5,9 +5,9 @@ class Item {
         el_descr.innerHTML = ' Description: ' + description;
 
         let el_price = document.createElement('div');
-        el_price.innerHTML = ' Price: ' + price + '€';
+        el_price.innerHTML = ' Price: ' + price + ' €';
     
-        let el_img = document.createElement("img");
+        let el_img = document.createElement('img');
         el_img.src = './img/'+name+'.jpg';
 
         this.element = document.createElement('div');
