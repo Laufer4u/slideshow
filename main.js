@@ -10,8 +10,8 @@ function addImages() {
     var i;
     let prices = [];
     let descriptions = [];
-    for (i = 1; i < 67; i++) {
-        addImage2Body(i, descriptions[i-1], prices[i-1]);
+    for (i = 0; i < 66; i++) {
+        addImage2Body(i, descriptions[i], prices[i]);
     }
 }
 
