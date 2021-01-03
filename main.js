@@ -5,5 +5,14 @@ function addImage2Body(name, description, price) {
     document.body.appendChild(item.element);
 }
 
-addImage2Body('2', 'Fruits ', '1000');
-addImage2Body('7', 'Ballet Shoes ', '800');
+function addImages() {
+        
+    var i;
+    let prices = [];
+    let descriptions = [];
+    for (i = 1; i < 67; i++) {
+        addImage2Body(i, descriptions, prices);
+    }
+}
+
+addImages()
